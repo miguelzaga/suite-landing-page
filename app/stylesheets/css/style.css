@@ -53,6 +53,11 @@ table {
 }
 
 html {
+  font-family: "Epilogue", sans-serif;
+  font-weight: normal;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -60,6 +65,55 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.875rem;
+  letter-spacing: -0.0625rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.03125rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.15625rem;
+  text-transform: uppercase;
+}
+
+q {
+  font-size: 1.25rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0;
+}
+
+body {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+}
+
+footer {
+  font-size: 0.9375rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+}
+
+b {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@use './../01-abstracts/' as *;
+
+h1 {
+    font-size: rem(72px);
+    line-height: rem(78px);
+    letter-spacing: rem(-1px);
+}
+
+h2 {
+    font-size: rem(48px);
+    line-height: rem(56px);
+    letter-spacing: rem(-0.5px);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: rem(18px);
+    line-height: rem(32px);
+    letter-spacing: rem(-0.2px);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: rem(16px);
+    line-height: rem(26px);
+    letter-spacing: rem(2.5px);
+    text-transform: uppercase;
+}
+
+q {
+    font-size: rem(20px);
+    line-height: rem(35px);
+    letter-spacing: 0;
+}
+
+body {
+    font-size: rem(18px);
+    line-height: rem(32px);
+    letter-spacing: 0;
+}
+
+footer {
+    font-size: rem(15px);
+    line-height: rem(32px);
+    letter-spacing: 0;
+}
+
+b {
+    font-weight: bold;
+}
