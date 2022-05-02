@@ -1,0 +1,28 @@
+@use "./../01-abstracts/" as *;
+
+@mixin btn {
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  @include btn;
+    width: rem(256px);
+    height: rem(61px);
+  border: none;
+  padding: rem(14px) rem(31px);
+  background-color: $black;
+  color: $white;
+  letter-spacing: rem(-0.18px);
+}
+
+.secondary-btn {
+    @include btn;
+    border: 1px $black solid;
+    width: rem(219px);
+    height: rem(56px);
+    padding: rem(12px) rem(23px);
+    background-color: transparent;
+    font-size: 1rem;
+    letter-spacing: rem(-0.16px);
+}
