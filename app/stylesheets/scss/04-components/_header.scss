@@ -1,0 +1,21 @@
+@use "./../01-abstracts/" as *;
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 1.5rem 1rem;
+  &__logo {
+    & svg {
+      width: 83px;
+      height: 32px;
+    }
+  }
+  &__btn {
+    width: rem(182px);
+    height: rem(48px);
+    font-size: rem(14px);
+    padding: rem(12px) rem(15px);
+    letter-spacing: -0.14px;
+  }
+}
