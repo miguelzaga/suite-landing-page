@@ -163,4 +163,15 @@ button {
   letter-spacing: -0.14px;
 }
 
+.main {
+  margin: 3.5rem 0;
+}
+
+.solution {
+  margin: 3.5rem 1rem;
+}
+.solution__pattern {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
