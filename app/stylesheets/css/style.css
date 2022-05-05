@@ -182,8 +182,16 @@ button {
 .solution__content {
   margin-bottom: 3.5rem;
 }
+.solution__pattern-container {
+  display: inline-block;
+  position: relative;
+}
 .solution__pattern {
-  width: 100%;
+  position: absolute;
+  top: -27.32px;
+  right: 0;
+  height: 19px;
+  width: 151.47px;
 }
 .solution__title {
   font-size: 2.375rem;
@@ -199,6 +207,24 @@ button {
   margin: 3.5rem 0;
   max-height: 15rem;
   max-width: 21.4375rem;
+}
+.solution__info {
+  margin: 3.5rem 0;
+  text-align: center;
+}
+.solution__info-li {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+  line-height: 1.625rem;
+  color: #49366d;
+}
+.solution__info-b {
+  display: block;
+  color: #172339;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
