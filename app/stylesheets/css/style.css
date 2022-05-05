@@ -176,43 +176,43 @@ button {
   margin: 3.5rem 0;
 }
 
-.solution {
+.showcase {
   margin: 3.5rem 1rem;
 }
-.solution__content {
+.showcase__content {
   margin-bottom: 3.5rem;
 }
-.solution__pattern-container {
+.showcase__pattern-container {
   display: inline-block;
   position: relative;
 }
-.solution__pattern {
+.showcase__pattern {
   position: absolute;
   top: -27.32px;
   right: 0;
   height: 19px;
   width: 151.47px;
 }
-.solution__title {
+.showcase__title {
   font-size: 2.375rem;
   line-height: 2.75rem;
   margin-bottom: 2rem;
 }
-.solution__txt {
+.showcase__txt {
   color: #49366d;
   font-size: 1rem;
   margin: 2rem 0;
 }
-.solution__img {
+.showcase__img {
   margin: 3.5rem 0;
   max-height: 15rem;
   max-width: 21.4375rem;
 }
-.solution__info {
+.showcase__info {
   margin: 3.5rem 0;
   text-align: center;
 }
-.solution__info-li {
+.showcase__info-li {
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-size: 1rem;
@@ -220,7 +220,7 @@ button {
   line-height: 1.625rem;
   color: #49366d;
 }
-.solution__info-b {
+.showcase__info-b {
   display: block;
   color: #172339;
   font-size: 3rem;
