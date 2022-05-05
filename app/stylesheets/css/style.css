@@ -57,6 +57,15 @@ html {
   font-weight: normal;
 }
 
+body {
+  background-color: #f3ede7;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -170,8 +179,26 @@ button {
 .solution {
   margin: 3.5rem 1rem;
 }
+.solution__content {
+  margin-bottom: 3.5rem;
+}
 .solution__pattern {
   width: 100%;
+}
+.solution__title {
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  margin-bottom: 2rem;
+}
+.solution__txt {
+  color: #49366d;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+.solution__img {
+  margin: 3.5rem 0;
+  max-height: 15rem;
+  max-width: 21.4375rem;
 }
 
 /*# sourceMappingURL=style.css.map */
