@@ -1,0 +1,48 @@
+@use "./../01-abstracts/" as *;
+
+$img-offset: 181px;
+
+.testimony {
+  margin: rem(calc(56px + $img-offset)) auto rem(56px) auto;
+  background-color: $black;
+  color: $white;
+  border-radius: rem(15px);
+  text-align: center;
+  max-width: 375px;
+  max-height: 748px;
+
+  & > * {
+    position: relative;
+    bottom: rem($img-offset);
+  }
+
+  &__img {
+    max-width: rem(252px);
+    margin: rem(40px) auto;
+    left: 9.5px;
+  }
+
+  &__pattern {
+      width: 49.27px;
+      height: 40px;
+      margin: rem(37px) auto;
+  }
+
+  &__title {
+    margin-bottom: rem(40px);
+    font-size: rem(40px);
+    line-height: rem(48px);
+    letter-spacing: rem(-0.42px);
+  }
+
+  &__txt {
+    margin: rem(40px) rem(16px);
+    font-size: rem(18px);
+    line-height: rem(32px);
+    letter-spacing: rem(0.09px);
+  }
+
+  &__footer{
+    margin: rem(40px) 0;
+  }
+}
