@@ -1,0 +1,25 @@
+@use './../01-abstracts/' as *;
+
+.footer {
+    width: rem(125px);
+    margin: rem(56px) auto rem(80px);
+
+    &__logo {
+        width: rem(81px);
+        height: rem(32px);
+        margin: rem(33px) auto;
+    }
+
+    &__copyright {
+        margin: rem(33px) auto;
+        color: $grey;
+        line-height: rem(32px);
+        letter-spacing: rem(0.08px);
+    }
+
+    &__socials {
+        margin: rem(33px) auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}

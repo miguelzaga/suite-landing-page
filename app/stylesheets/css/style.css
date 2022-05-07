@@ -267,4 +267,25 @@ button {
   margin: 2.5rem 0;
 }
 
+.footer {
+  width: 7.8125rem;
+  margin: 3.5rem auto 5rem;
+}
+.footer__logo {
+  width: 5.0625rem;
+  height: 2rem;
+  margin: 2.0625rem auto;
+}
+.footer__copyright {
+  margin: 2.0625rem auto;
+  color: #49366d;
+  line-height: 2rem;
+  letter-spacing: 0.005rem;
+}
+.footer__socials {
+  margin: 2.0625rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */
