@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  background-color: #f3ede7;
+  background-color: #faf8f6;
 }
 
 img {
@@ -161,9 +161,13 @@ button {
   justify-content: space-between;
   margin: 1.5rem 1rem;
 }
+.header__logo {
+  margin: auto 0;
+}
 .header__logo svg {
   width: 83px;
   height: 32px;
+  vertical-align: middle;
 }
 .header__btn {
   width: 11.375rem;
