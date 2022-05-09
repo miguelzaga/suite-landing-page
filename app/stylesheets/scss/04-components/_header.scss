@@ -5,6 +5,9 @@
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 1.5rem 1rem;
+  @include breakpoint($md) {
+    margin: rem(40px) rem(40px) rem(80px) rem(39px);
+  }
   &__logo {
     margin: auto 0;
     & svg {
@@ -18,6 +21,12 @@
     height: rem(48px);
     font-size: rem(14px);
     padding: rem(12px) rem(15px);
-    letter-spacing: -0.14px;
+    letter-spacing: rem(-0.14px);
+    @include breakpoint($md){
+      width: rem(219px);
+      height: rem(56px);
+      font-size: rem(16px);
+      letter-spacing: rem(-0.16px);
+    }
   }
 }

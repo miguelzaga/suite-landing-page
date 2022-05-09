@@ -161,6 +161,11 @@ button {
   justify-content: space-between;
   margin: 1.5rem 1rem;
 }
+@media (min-width: 30rem) {
+  .header {
+    margin: 2.5rem 2.5rem 5rem 2.4375rem;
+  }
+}
 .header__logo {
   margin: auto 0;
 }
@@ -174,7 +179,15 @@ button {
   height: 3rem;
   font-size: 0.875rem;
   padding: 0.75rem 0.9375rem;
-  letter-spacing: -0.14px;
+  letter-spacing: -0.00875rem;
+}
+@media (min-width: 30rem) {
+  .header__btn {
+    width: 13.6875rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+  }
 }
 
 .main {
@@ -182,7 +195,7 @@ button {
 }
 
 .showcase {
-  margin: 3.5rem 1rem;
+  margin: 5.2075rem 1rem 3.5rem;
 }
 .showcase__content {
   margin-bottom: 3.5rem;
