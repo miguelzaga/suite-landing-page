@@ -1,7 +1,9 @@
 @use "./../01-abstracts/" as *;
 
+$pattern-offset: calc(19px + 8.32px);
+
 .showcase {
-  margin: rem(56px) rem(16px);
+  margin: rem(calc($pattern-offset + 56px)) rem(16px) rem(56px);
 
   &__content {
       margin-bottom: rem(56px);
@@ -14,7 +16,7 @@
   
   &__pattern {
     position: absolute;
-    top: - calc(19px + 8.32px);
+    top: - $pattern-offset;
     right: 0;
     height: 19px;
     width: 151.47px;
