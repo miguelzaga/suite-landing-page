@@ -1,9 +1,10 @@
 @use "./../01-abstracts/" as *;
 
-$pattern-offset: calc(19px + 8.32px);
-
 .showcase {
-  margin: rem(calc($pattern-offset + 56px)) rem(16px) rem(56px);
+  margin: rem(58.11px) rem(16px) rem(56px);
+  @include breakpoint($md-lg) {
+    margin: rem(40px) rem(40px) rem(92px) rem(39px);
+  }
 
   &__content {
       margin-bottom: rem(56px);
@@ -16,16 +17,31 @@ $pattern-offset: calc(19px + 8.32px);
   
   &__pattern {
     position: absolute;
-    top: - $pattern-offset;
-    right: 0;
-    height: 19px;
+    top: - calc(16.89px + 8.32px);
+    right: -2.5px;
+    height: 16.89px;
     width: 151.47px;
+    @include breakpoint($md-lg){
+      right: -5px;
+      top: - calc(29px + 16.32px);
+      height: 29px;
+      width: 231.19px;
+    }
   }
 
   &__title {
     font-size: rem(38px);
     line-height: rem(44px);
+    max-width: 350px;
     margin-bottom: rem(32px);
+    padding-top: calc(16.89px + 8.32px);
+    @include breakpoint($md-lg){
+      padding-top: calc(29px + 16.32px);
+      font-size: rem(56px);
+      line-height: rem(64px);
+      max-width: 520px;
+      margin-bottom: rem(40px);
+    };
   }
 
   &__txt {
