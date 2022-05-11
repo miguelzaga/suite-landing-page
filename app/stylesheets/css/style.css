@@ -199,11 +199,21 @@ button {
 }
 @media (min-width: 40rem) {
   .showcase {
+    position: relative;
     margin: 2.5rem 2.5rem 5.75rem 2.4375rem;
+    padding-top: 2.6675rem;
   }
 }
 .showcase__content {
-  margin-bottom: 3.5rem;
+  max-width: 375px;
+  margin: 0 auto 3.5rem;
+}
+@media (min-width: 40rem) {
+  .showcase__content {
+    max-width: none;
+    margin: 0 0 5.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 .showcase__pattern-container {
   display: inline-block;
@@ -243,12 +253,36 @@ button {
 .showcase__txt {
   color: #49366d;
   font-size: 1rem;
+  line-height: 1.75rem;
+  max-width: 21.4375rem;
   margin: 2rem 0;
 }
-.showcase__img {
+@media (min-width: 40rem) {
+  .showcase__txt {
+    margin: 2.5rem 0;
+  }
+}
+.showcase__img--mobile {
   margin: 3.5rem auto;
-  max-height: 15rem;
-  max-width: 21.4375rem;
+  max-width: 23.4375rem;
+}
+@media (min-width: 40rem) {
+  .showcase__img--mobile {
+    display: none;
+  }
+}
+.showcase__img--tablet {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .showcase__img--tablet {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 17.5625rem;
+  }
 }
 .showcase__info {
   margin: 3.5rem 0;
