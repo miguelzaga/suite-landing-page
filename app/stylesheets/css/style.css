@@ -285,8 +285,17 @@ button {
   }
 }
 .showcase__info {
+  display: flex;
+  flex-direction: column;
   margin: 3.5rem 0;
   text-align: center;
+}
+@media (min-width: 40rem) {
+  .showcase__info {
+    margin: 5.5rem auto 5.75rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .showcase__info-li {
   margin-bottom: 2rem;
@@ -295,6 +304,11 @@ button {
   letter-spacing: 2.5px;
   line-height: 1.625rem;
   color: #49366d;
+}
+@media (min-width: 40rem) {
+  .showcase__info-li {
+    width: 223px;
+  }
 }
 .showcase__info-b {
   display: block;

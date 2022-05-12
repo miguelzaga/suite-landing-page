@@ -84,8 +84,15 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
     margin: rem(56px) 0;
     text-align: center;
+    @include breakpoint($md-lg) {
+      margin: rem(88px) auto rem(92px);
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__info-li {
@@ -95,6 +102,9 @@
     letter-spacing: 2.5px;
     line-height: rem(26px);
     color: $grey;
+    @include breakpoint($md-lg) {
+      width: 223px;
+    }
   }
 
   &__info-b {
