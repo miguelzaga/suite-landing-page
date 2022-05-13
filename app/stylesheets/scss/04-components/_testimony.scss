@@ -3,29 +3,54 @@
 $img-offset: 181px;
 
 .testimony {
-  margin: rem(calc(56px + $img-offset)) auto rem(56px) auto;
+  margin: rem(calc(56px + $img-offset)) auto rem(56px);
   background-color: $black;
   color: $white;
   border-radius: rem(15px);
   text-align: center;
   max-width: 375px;
   max-height: 748px;
+  @include breakpoint($md-lg) {
+    margin: rem(calc(92px + $img-offset)) auto rem(72px);
+    max-width: 689px;
+    max-height: 684px;
+  }
 
   & > * {
     position: relative;
     bottom: rem($img-offset);
   }
 
-  &__img {
-    max-width: rem(252px);
-    margin: rem(40px) auto;
-    left: 9.5px;
+  &__img-container {
+    position: relative;
+    overflow: hidden;
   }
 
-  &__pattern {
-      width: 49.27px;
-      height: 40px;
-      margin: rem(37px) auto;
+  &__img {
+    position: relative;
+    max-width: rem(252px);
+    margin: 0 auto;
+    left: 9.5px;
+    z-index: 1;
+  }
+
+  &__pattern-blur {
+    display: none;
+
+    @include breakpoint($md-lg) {
+      display: block;
+      position: absolute;
+      bottom: -5rem;
+      left: calc(50% - 400px / 2);
+      width: 400px;
+      z-index: 0;
+    }
+  }
+
+  &__pattern-line {
+    width: 49.27px;
+    height: 40px;
+    margin: rem(37px) auto;
   }
 
   &__title {
@@ -40,9 +65,13 @@ $img-offset: 181px;
     font-size: rem(18px);
     line-height: rem(32px);
     letter-spacing: rem(0.09px);
+    @include breakpoint($md-lg) {
+      max-width: 573px;
+      margin: rem(40px) auto;
+    }
   }
 
-  &__footer{
-    margin: rem(40px) 0;
+  &__footer {
+    margin: rem(40px) 0 rem(64px);
   }
 }

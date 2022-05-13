@@ -286,7 +286,8 @@ button {
 }
 .showcase__info {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  gap: 2rem;
   margin: 3.5rem 0;
   text-align: center;
 }
@@ -298,7 +299,6 @@ button {
   }
 }
 .showcase__info-li {
-  margin-bottom: 2rem;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 2.5px;
@@ -318,7 +318,7 @@ button {
 }
 
 .testimony {
-  margin: 14.8125rem auto 3.5rem auto;
+  margin: 14.8125rem auto 3.5rem;
   background-color: #172339;
   color: #faf8f6;
   border-radius: 0.9375rem;
@@ -326,16 +326,42 @@ button {
   max-width: 375px;
   max-height: 748px;
 }
+@media (min-width: 40rem) {
+  .testimony {
+    margin: 17.0625rem auto 4.5rem;
+    max-width: 689px;
+    max-height: 684px;
+  }
+}
 .testimony > * {
   position: relative;
   bottom: 11.3125rem;
 }
-.testimony__img {
-  max-width: 15.75rem;
-  margin: 2.5rem auto;
-  left: 9.5px;
+.testimony__img-container {
+  position: relative;
+  overflow: hidden;
 }
-.testimony__pattern {
+.testimony__img {
+  position: relative;
+  max-width: 15.75rem;
+  margin: 0 auto;
+  left: 9.5px;
+  z-index: 1;
+}
+.testimony__pattern-blur {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .testimony__pattern-blur {
+    display: block;
+    position: absolute;
+    bottom: -5rem;
+    left: calc(50% - 200px);
+    width: 400px;
+    z-index: 0;
+  }
+}
+.testimony__pattern-line {
   width: 49.27px;
   height: 40px;
   margin: 2.3125rem auto;
@@ -352,8 +378,14 @@ button {
   line-height: 2rem;
   letter-spacing: 0.005625rem;
 }
+@media (min-width: 40rem) {
+  .testimony__txt {
+    max-width: 573px;
+    margin: 2.5rem auto;
+  }
+}
 .testimony__footer {
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 4rem;
 }
 
 .footer {
