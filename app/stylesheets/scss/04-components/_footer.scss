@@ -1,25 +1,42 @@
-@use './../01-abstracts/' as *;
+@use "./../01-abstracts/" as *;
 
 .footer {
-    width: rem(125px);
-    margin: rem(56px) auto rem(80px);
+  width: rem(125px);
+  margin: rem(56px) auto rem(80px);
+  @include breakpoint($md-lg) {
+    margin: rem(72px) rem(40px) rem(72px) rem(39px);
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &__logo {
-        width: rem(81px);
-        height: rem(32px);
-        margin: rem(33px) auto;
+  &__logo {
+    width: rem(81px);
+    height: rem(32px);
+    margin: rem(33px) auto;
+    @include breakpoint($md-lg) {
+      margin: 0;
     }
+  }
 
-    &__copyright {
-        margin: rem(33px) auto;
-        color: $grey;
-        line-height: rem(32px);
-        letter-spacing: rem(0.08px);
+  &__copyright {
+    margin: rem(33px) auto;
+    color: $grey;
+    line-height: rem(32px);
+    letter-spacing: rem(0.08px);
+    @include breakpoint($md-lg) {
+      margin: 0;
     }
+  }
 
-    &__socials {
-        margin: rem(33px) auto;
-        display: flex;
-        justify-content: space-between;
+  &__socials {
+    margin: rem(33px) auto;
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint($md-lg) {
+      margin: 0;
+      gap: rem(28px);
     }
+  }
 }
