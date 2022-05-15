@@ -10,7 +10,7 @@ $img-offset: 181px;
   text-align: center;
   max-width: 375px;
   max-height: 748px;
-  @include breakpoint($md-lg) {
+  @include breakpoint($md) {
     margin: rem(calc(92px + $img-offset)) auto rem(72px);
     max-width: 689px;
     max-height: 684px;
@@ -37,7 +37,7 @@ $img-offset: 181px;
   &__pattern-blur {
     display: none;
 
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       display: block;
       position: absolute;
       bottom: -5rem;
@@ -65,7 +65,7 @@ $img-offset: 181px;
     font-size: rem(18px);
     line-height: rem(32px);
     letter-spacing: rem(0.09px);
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       max-width: 573px;
       margin: rem(40px) auto;
     }

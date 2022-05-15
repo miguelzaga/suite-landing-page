@@ -3,6 +3,7 @@
 @mixin btn {
   border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .primary-btn {
@@ -14,6 +15,15 @@
   background-color: $black;
   color: $white;
   letter-spacing: rem(-0.18px);
+  &:hover {
+    background: rgb(255, 96, 255);
+    background: linear-gradient(
+      170deg,
+      rgba(255, 96, 255, 1) 0%,
+      rgba(203, 48, 227, 1) 50%,
+      rgba(255, 168, 78, 1) 100%
+    );
+  }
 }
 
 .secondary-btn {
@@ -24,5 +34,10 @@
   padding: rem(12px) rem(23px);
   background-color: transparent;
   font-size: 1rem;
+  color: $black;
   letter-spacing: rem(-0.16px);
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
 }

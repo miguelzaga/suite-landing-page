@@ -134,6 +134,7 @@ button {
 .primary-btn {
   border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
   width: 16rem;
   height: 3.8125rem;
   border: none;
@@ -142,17 +143,27 @@ button {
   color: #faf8f6;
   letter-spacing: -0.01125rem;
 }
+.primary-btn:hover {
+  background: rgb(255, 96, 255);
+  background: linear-gradient(170deg, rgb(255, 96, 255) 0%, rgb(203, 48, 227) 50%, rgb(255, 168, 78) 100%);
+}
 
 .secondary-btn {
   border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
   border: 1px #172339 solid;
   width: 13.6875rem;
   height: 3.5rem;
   padding: 0.75rem 1.4375rem;
   background-color: transparent;
   font-size: 1rem;
+  color: #172339;
   letter-spacing: -0.01rem;
+}
+.secondary-btn:hover {
+  background-color: #172339;
+  color: #faf8f6;
 }
 
 .header {
@@ -432,6 +443,12 @@ button {
     margin: 0;
     gap: 1.75rem;
   }
+}
+.footer__socials-fb, .footer__socials-tw, .footer__socials-ig {
+  cursor: pointer;
+}
+.footer__socials-fb:hover, .footer__socials-tw:hover, .footer__socials-ig:hover {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

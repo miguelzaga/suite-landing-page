@@ -2,7 +2,7 @@
 
 .showcase {
   margin: rem(58.11px) rem(16px) rem(56px);
-  @include breakpoint($md-lg) {
+  @include breakpoint($md) {
     position: relative;
     margin: rem(40px) rem(40px) rem(92px) rem(39px);
     padding-top: rem(42.68px);
@@ -11,7 +11,7 @@
   &__content {
     max-width: 375px;
     margin: 0 auto rem(56px);
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       max-width: none;
       margin: 0 0 rem(88px);
       padding-bottom: rem(40px);
@@ -29,7 +29,7 @@
     right: -2.5px;
     height: 16.89px;
     width: 151.47px;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       right: -5px;
       top: calc(-29px - 16.32px);
       height: 29px;
@@ -43,7 +43,7 @@
     max-width: 350px;
     margin-bottom: rem(32px);
     padding-top: calc(16.89px + 8.32px);
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       padding-top: calc(29px + 16.32px);
       font-size: rem(56px);
       line-height: rem(64px);
@@ -58,7 +58,7 @@
     line-height: rem(28px);
     max-width: rem(343px);
     margin: rem(32px) 0;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       margin: rem(40px) 0;
     }
   }
@@ -66,14 +66,14 @@
   &__img--mobile {
     margin: rem(56px) auto;
     max-width: rem(375px);
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       display: none;
     }
   }
 
   &__img--tablet {
     display: none;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       display: block;
       position: absolute;
       top: 0;
@@ -89,7 +89,7 @@
     gap: rem(32px);
     margin: rem(56px) 0;
     text-align: center;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       margin: rem(88px) auto rem(92px);
       flex-direction: row;
       justify-content: space-around;
@@ -102,7 +102,7 @@
     letter-spacing: 2.5px;
     line-height: rem(26px);
     color: $grey;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       width: 223px;
     }
   }

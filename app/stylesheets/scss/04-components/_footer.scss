@@ -3,7 +3,7 @@
 .footer {
   width: rem(125px);
   margin: rem(56px) auto rem(80px);
-  @include breakpoint($md-lg) {
+  @include breakpoint($md) {
     margin: rem(72px) rem(40px) rem(72px) rem(39px);
     width: auto;
     display: flex;
@@ -15,7 +15,7 @@
     width: rem(81px);
     height: rem(32px);
     margin: rem(33px) auto;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       margin: 0;
     }
   }
@@ -25,7 +25,7 @@
     color: $grey;
     line-height: rem(32px);
     letter-spacing: rem(0.08px);
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       margin: 0;
     }
   }
@@ -34,9 +34,21 @@
     margin: rem(33px) auto;
     display: flex;
     justify-content: space-between;
-    @include breakpoint($md-lg) {
+    @include breakpoint($md) {
       margin: 0;
       gap: rem(28px);
+    }
+
+    &-fb,
+    &-tw,
+    &-ig {
+      cursor: pointer;
+    }
+
+    &-fb:hover,
+    &-tw:hover,
+    &-ig:hover {
+      opacity: 0.5;
     }
   }
 }
