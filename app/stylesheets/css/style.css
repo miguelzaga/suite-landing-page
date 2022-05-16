@@ -221,6 +221,20 @@ button {
     padding-top: 2.6675rem;
   }
 }
+@media (min-width: 60rem) {
+  .showcase {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 2.855rem;
+  }
+}
+@media (min-width: 75rem) {
+  .showcase {
+    max-width: 1110px;
+    margin: 67px auto 144px auto;
+  }
+}
 .showcase__content {
   max-width: 375px;
   margin: 0 auto 3.5rem;
@@ -230,6 +244,17 @@ button {
     max-width: none;
     margin: 0 0 5.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 60rem) {
+  .showcase__content {
+    width: 43.0625rem;
+  }
+}
+@media (min-width: 75rem) {
+  .showcase__content {
+    width: 51.5rem;
+    padding-bottom: 5.75rem;
   }
 }
 .showcase__pattern-container {
@@ -251,6 +276,13 @@ button {
     width: 231.19px;
   }
 }
+@media (min-width: 75rem) {
+  .showcase__pattern {
+    top: -57.32px;
+    height: 36px;
+    width: 287px;
+  }
+}
 .showcase__title {
   font-size: 2.375rem;
   line-height: 2.75rem;
@@ -267,6 +299,14 @@ button {
     margin-bottom: 2.5rem;
   }
 }
+@media (min-width: 75rem) {
+  .showcase__title {
+    padding-top: 57.32px;
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+    max-width: 635px;
+  }
+}
 .showcase__txt {
   color: #49366d;
   font-size: 1rem;
@@ -277,6 +317,14 @@ button {
 @media (min-width: 40rem) {
   .showcase__txt {
     margin: 2.5rem 0;
+  }
+}
+@media (min-width: 75rem) {
+  .showcase__txt {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    max-width: 21.875rem;
+    margin: 2.5rem 0 3.25rem;
   }
 }
 .showcase__img--mobile {
@@ -301,6 +349,29 @@ button {
     max-width: 17.5625rem;
   }
 }
+@media (min-width: 60rem) {
+  .showcase__img--tablet {
+    left: 408px;
+  }
+}
+@media (min-width: 75rem) {
+  .showcase__img--tablet {
+    display: none;
+  }
+}
+.showcase__img--desktop {
+  display: none;
+}
+@media (min-width: 75rem) {
+  .showcase__img--desktop {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    max-width: 350px;
+    left: 474px;
+    top: 0;
+  }
+}
 .showcase__info {
   display: flex;
   flex-flow: column nowrap;
@@ -315,6 +386,16 @@ button {
     justify-content: space-around;
   }
 }
+@media (min-width: 60rem) {
+  .showcase__info {
+    text-align: left;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 45.32px;
+    justify-content: space-between;
+    height: 375px;
+  }
+}
 .showcase__info-li {
   text-transform: uppercase;
   font-size: 1rem;
@@ -325,6 +406,11 @@ button {
 @media (min-width: 40rem) {
   .showcase__info-li {
     width: 223px;
+  }
+}
+@media (min-width: 60rem) {
+  .showcase__info-li {
+    width: 190px;
   }
 }
 .showcase__info-b {

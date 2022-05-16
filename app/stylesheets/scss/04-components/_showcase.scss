@@ -7,6 +7,16 @@
     margin: rem(40px) rem(40px) rem(92px) rem(39px);
     padding-top: rem(42.68px);
   }
+  @include breakpoint($md-lg) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: rem(45.68px);
+  }
+  @include breakpoint($lg) {
+    max-width: 1110px;
+    margin: 67px auto 144px auto;
+  }
 
   &__content {
     max-width: 375px;
@@ -15,6 +25,13 @@
       max-width: none;
       margin: 0 0 rem(88px);
       padding-bottom: rem(40px);
+    }
+    @include breakpoint($md-lg) {
+      width: rem(689px);
+    }
+    @include breakpoint($lg){
+      width: rem(824px);
+      padding-bottom: rem(92px);
     }
   }
 
@@ -35,6 +52,11 @@
       height: 29px;
       width: 231.19px;
     }
+    @include breakpoint($lg) {
+      top: calc(-36px - 21.32px);
+      height: 36px;
+      width: 287px;
+    }
   }
 
   &__title {
@@ -50,6 +72,12 @@
       max-width: 520px;
       margin-bottom: rem(40px);
     }
+    @include breakpoint($lg) {
+      padding-top: calc(36px + 21.32px);
+      font-size: rem(72px);
+      line-height: rem(78px);
+      max-width: 635px;
+    }
   }
 
   &__txt {
@@ -60,6 +88,13 @@
     margin: rem(32px) 0;
     @include breakpoint($md) {
       margin: rem(40px) 0;
+    }
+    @include breakpoint($lg) {
+      font-size: rem(18px);
+      line-height: rem(32px);
+      max-width: rem(350px);
+      margin: rem(40px) 0 rem(52px);
+
     }
   }
 
@@ -81,6 +116,24 @@
       z-index: -1;
       max-width: rem(281px);
     }
+    @include breakpoint($md-lg) {
+      left: 408px;
+    }
+    @include breakpoint($lg) {
+      display: none;
+    }
+  }
+  
+  &__img--desktop {
+    display: none;
+    @include breakpoint($lg) {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      max-width: 350px;
+      left: 474px;
+      top: 0;
+    }
   }
 
   &__info {
@@ -94,6 +147,14 @@
       flex-direction: row;
       justify-content: space-around;
     }
+    @include breakpoint($md-lg) {
+      text-align: left;
+      flex-direction: column;
+      margin: 0;
+      margin-top: calc(29px + 16.32px);
+      justify-content: space-between;
+      height: 375px;
+    }
   }
 
   &__info-li {
@@ -104,6 +165,9 @@
     color: $grey;
     @include breakpoint($md) {
       width: 223px;
+    }
+    @include breakpoint($md-lg) {
+      width: 190px;
     }
   }
 
