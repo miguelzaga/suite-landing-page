@@ -8,6 +8,10 @@
   @include breakpoint($md) {
     margin: rem(40px) rem(40px) rem(80px) rem(39px);
   }
+  @include breakpoint($lg) {
+    max-width: rem(1110px);
+    margin: rem(50px) auto rem(67px) auto;
+  }
   &__logo {
     margin: auto 0;
     & svg {

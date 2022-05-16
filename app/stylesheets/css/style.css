@@ -177,6 +177,12 @@ button {
     margin: 2.5rem 2.5rem 5rem 2.4375rem;
   }
 }
+@media (min-width: 75rem) {
+  .header {
+    max-width: 69.375rem;
+    margin: 3.125rem auto 4.1875rem auto;
+  }
+}
 .header__logo {
   margin: auto 0;
 }
