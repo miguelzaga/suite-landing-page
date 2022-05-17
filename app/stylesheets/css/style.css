@@ -436,20 +436,69 @@ button {
     max-height: 684px;
   }
 }
+@media (min-width: 60rem) {
+  .testimony {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: none;
+    max-height: 545px;
+    margin-left: 39px;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 75rem) {
+  .testimony {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .testimony > * {
   position: relative;
   bottom: 11.3125rem;
+}
+@media (min-width: 60rem) {
+  .testimony > * {
+    position: static;
+    bottom: auto;
+  }
 }
 .testimony__img-container {
   position: relative;
   overflow: hidden;
 }
-.testimony__img {
+.testimony__img--tablet {
   position: relative;
   max-width: 15.75rem;
   margin: 0 auto;
   left: 9.5px;
   z-index: 1;
+}
+@media (min-width: 60rem) {
+  .testimony__img--tablet {
+    max-width: none;
+    width: 275px;
+  }
+}
+@media (min-width: 60rem) {
+  .testimony__img--tablet {
+    display: none;
+  }
+}
+.testimony__img--desktop {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .testimony__img--desktop {
+    width: 300px;
+    display: block;
+    z-index: 1;
+  }
+}
+@media (min-width: 75rem) {
+  .testimony__img--desktop {
+    width: 375px;
+  }
 }
 .testimony__pattern-blur {
   display: none;
@@ -464,16 +513,42 @@ button {
     z-index: 0;
   }
 }
+@media (min-width: 60rem) {
+  .testimony__pattern-blur {
+    bottom: 0;
+  }
+}
 .testimony__pattern-line {
   width: 49.27px;
   height: 40px;
   margin: 2.3125rem auto;
+}
+@media (min-width: 60rem) {
+  .testimony__pattern-line {
+    width: 64.05px;
+    height: 52px;
+    margin: 161.15px 0;
+  }
+}
+@media (min-width: 60rem) {
+  .testimony__txt-container {
+    padding: 5.5rem 0;
+    width: 350px;
+    text-align: left;
+  }
 }
 .testimony__title {
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: -0.02625rem;
+}
+@media (min-width: 75rem) {
+  .testimony__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.03125rem;
+  }
 }
 .testimony__txt {
   margin: 2.5rem 1rem;
@@ -485,6 +560,13 @@ button {
   .testimony__txt {
     max-width: 573px;
     margin: 2.5rem auto;
+  }
+}
+@media (min-width: 75rem) {
+  .testimony__txt {
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+    letter-spacing: 0.00625rem;
   }
 }
 .testimony__footer {
