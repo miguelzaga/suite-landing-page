@@ -1,16 +1,16 @@
-@use './../01-abstracts/' as *;
+@use "./../01-abstracts/" as *;
 
 html {
-    font-family: $font;
-    font-weight: normal;
+  font-family: $font;
+  font-weight: normal;
 }
 
 body {
-    background-color: $white;
+  background-color: $white;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }

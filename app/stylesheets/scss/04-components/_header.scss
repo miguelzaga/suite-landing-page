@@ -9,7 +9,7 @@
     margin: rem(40px) rem(40px) rem(80px) rem(39px);
   }
   @include breakpoint($lg) {
-    max-width: rem(1110px);
+    max-width: $max-lg;
     margin: rem(50px) auto rem(67px) auto;
   }
   &__logo {
@@ -26,7 +26,7 @@
     font-size: rem(14px);
     padding: rem(12px) rem(15px);
     letter-spacing: rem(-0.14px);
-    @include breakpoint($md){
+    @include breakpoint($md) {
       width: rem(219px);
       height: rem(56px);
       font-size: rem(16px);

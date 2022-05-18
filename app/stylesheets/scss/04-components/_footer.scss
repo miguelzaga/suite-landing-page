@@ -10,9 +10,9 @@
     justify-content: space-between;
     align-items: center;
   }
-  @include breakpoint($lg){
-    max-width: 1110px;
-    margin: 95px auto 72px;
+  @include breakpoint($lg) {
+    max-width: $max-lg;
+    margin: rem(95px) auto rem(72px);
   }
 
   &__logo {

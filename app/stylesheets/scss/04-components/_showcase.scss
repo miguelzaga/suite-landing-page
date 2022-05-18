@@ -14,8 +14,8 @@
     padding-top: rem(45.68px);
   }
   @include breakpoint($lg) {
-    max-width: 1110px;
-    margin: 67px auto 144px auto;
+    max-width: $max-lg;
+    margin: rem(67px) auto rem(144px) auto;
   }
 
   &__content {
@@ -30,7 +30,7 @@
       width: rem(689px);
       margin-bottom: 0;
     }
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       width: rem(824px);
       padding-bottom: rem(92px);
     }
@@ -63,21 +63,21 @@
   &__title {
     font-size: rem(38px);
     line-height: rem(44px);
-    max-width: 350px;
+    max-width: rem(350px);
     margin-bottom: rem(32px);
     padding-top: calc(16.89px + 8.32px);
     @include breakpoint($md) {
       padding-top: calc(29px + 16.32px);
       font-size: rem(56px);
       line-height: rem(64px);
-      max-width: 520px;
+      max-width: rem(520px);
       margin-bottom: rem(40px);
     }
     @include breakpoint($lg) {
       padding-top: calc(36px + 21.32px);
       font-size: rem(72px);
       line-height: rem(78px);
-      max-width: 635px;
+      max-width: rem(635px);
     }
   }
 
@@ -95,7 +95,6 @@
       line-height: rem(32px);
       max-width: rem(350px);
       margin: rem(40px) 0 rem(52px);
-
     }
   }
 
@@ -124,14 +123,14 @@
       display: none;
     }
   }
-  
+
   &__img--desktop {
     display: none;
     @include breakpoint($lg) {
       display: block;
       position: absolute;
       z-index: -1;
-      max-width: 350px;
+      max-width: rem(350px);
       left: 474px;
       top: 0;
     }
@@ -165,10 +164,10 @@
     line-height: rem(26px);
     color: $grey;
     @include breakpoint($md) {
-      width: 223px;
+      width: rem(223px);
     }
     @include breakpoint($md-lg) {
-      width: 190px;
+      width: rem(190px);
     }
   }
 

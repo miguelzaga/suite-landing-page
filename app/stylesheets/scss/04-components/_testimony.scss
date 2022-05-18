@@ -12,19 +12,19 @@ $img-offset: 181px;
   max-height: 748px;
   @include breakpoint($md) {
     margin: rem(calc(92px + $img-offset)) auto rem(72px);
-    max-width: 689px;
-    max-height: 684px;
+    max-width: rem(689px);
+    max-height: rem(684px);
   }
   @include breakpoint($md-lg) {
     display: flex;
     justify-content: space-evenly;
     max-width: none;
-    max-height: 545px;
+    max-height: rem(545px);
     margin: calc(55px + 144px) 40px 95px 39px;
   }
   @include breakpoint($lg) {
-    justify-content:space-between;
-    max-width: 1110px;
+    justify-content: space-between;
+    max-width: $max-lg;
     margin-left: auto;
     margin-right: auto;
   }
@@ -44,7 +44,7 @@ $img-offset: 181px;
     @include breakpoint($md-lg) {
       overflow: visible;
     }
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       margin-left: 112px;
     }
   }
@@ -57,7 +57,7 @@ $img-offset: 181px;
     z-index: 1;
     @include breakpoint($md-lg) {
       max-width: none;
-      width: 275px;
+      width: rem(275px);
     }
     @include breakpoint($md-lg) {
       display: none;
@@ -74,7 +74,7 @@ $img-offset: 181px;
       z-index: 1;
     }
     @include breakpoint($lg) {
-      width: 375px;
+      width: rem(375px);
     }
   }
 
@@ -112,7 +112,7 @@ $img-offset: 181px;
       width: 350px;
       text-align: left;
     }
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       margin-right: 125px;
     }
   }

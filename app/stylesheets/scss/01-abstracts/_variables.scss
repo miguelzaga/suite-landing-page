@@ -1,4 +1,4 @@
-@use './functions' as *;
+@use "./functions" as *;
 
 // Colors
 $black: #172339;
@@ -10,9 +10,11 @@ $magenta: #cb30e3;
 $yellow: #ffa84e;
 
 // Font
-$font: 'Epilogue', sans-serif;
+$font: "Epilogue", sans-serif;
 
 // Breakpoints
 $md: rem(640px);
 $md-lg: rem(960px);
 $lg: rem(1200px);
+
+$max-lg: rem(1110px);
