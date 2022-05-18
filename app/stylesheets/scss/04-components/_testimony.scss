@@ -24,6 +24,7 @@ $img-offset: 181px;
     margin-right: 40px;
   }
   @include breakpoint($lg) {
+    justify-content:space-between;
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +42,12 @@ $img-offset: 181px;
   &__img-container {
     position: relative;
     overflow: hidden;
+    @include breakpoint($md-lg) {
+      overflow: visible;
+    }
+    @include breakpoint($lg){
+      margin-left: 112px;
+    }
   }
 
   &__img--tablet {
@@ -61,8 +68,10 @@ $img-offset: 181px;
   &__img--desktop {
     display: none;
     @include breakpoint($md-lg) {
-      width: 300px;
       display: block;
+      height: 600px;
+      position: relative;
+      bottom: 55px;
       z-index: 1;
     }
     @include breakpoint($lg) {
@@ -82,7 +91,8 @@ $img-offset: 181px;
       z-index: 0;
     }
     @include breakpoint($md-lg) {
-      bottom: 0;
+      left: calc(50% - 600px / 2);
+      width: 600px;
     }
   }
 
@@ -99,9 +109,12 @@ $img-offset: 181px;
 
   &__txt-container {
     @include breakpoint($md-lg) {
-      padding: rem(88px) 0;
+      margin: rem(88px) 0;
       width: 350px;
       text-align: left;
+    }
+    @include breakpoint($lg){
+      margin-right: 125px;
     }
   }
 
@@ -126,10 +139,10 @@ $img-offset: 181px;
       max-width: 573px;
       margin: rem(40px) auto;
     }
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       font-size: rem(20px);
       line-height: rem(35px);
-      letter-spacing: rem(0.1px);      
+      letter-spacing: rem(0.1px);
     }
   }
 

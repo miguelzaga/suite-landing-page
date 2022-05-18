@@ -448,6 +448,7 @@ button {
 }
 @media (min-width: 75rem) {
   .testimony {
+    justify-content: space-between;
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
@@ -466,6 +467,16 @@ button {
 .testimony__img-container {
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 60rem) {
+  .testimony__img-container {
+    overflow: visible;
+  }
+}
+@media (min-width: 75rem) {
+  .testimony__img-container {
+    margin-left: 112px;
+  }
 }
 .testimony__img--tablet {
   position: relative;
@@ -490,8 +501,10 @@ button {
 }
 @media (min-width: 60rem) {
   .testimony__img--desktop {
-    width: 300px;
     display: block;
+    height: 600px;
+    position: relative;
+    bottom: 55px;
     z-index: 1;
   }
 }
@@ -515,7 +528,8 @@ button {
 }
 @media (min-width: 60rem) {
   .testimony__pattern-blur {
-    bottom: 0;
+    left: calc(50% - 300px);
+    width: 600px;
   }
 }
 .testimony__pattern-line {
@@ -532,9 +546,14 @@ button {
 }
 @media (min-width: 60rem) {
   .testimony__txt-container {
-    padding: 5.5rem 0;
+    margin: 5.5rem 0;
     width: 350px;
     text-align: left;
+  }
+}
+@media (min-width: 75rem) {
+  .testimony__txt-container {
+    margin-right: 125px;
   }
 }
 .testimony__title {
