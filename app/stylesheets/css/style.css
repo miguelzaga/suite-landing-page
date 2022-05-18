@@ -605,6 +605,12 @@ button {
     align-items: center;
   }
 }
+@media (min-width: 75rem) {
+  .footer {
+    max-width: 1110px;
+    margin: 95px auto 72px;
+  }
+}
 .footer__logo {
   width: 5.0625rem;
   height: 2rem;
