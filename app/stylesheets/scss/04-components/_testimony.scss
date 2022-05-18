@@ -20,8 +20,7 @@ $img-offset: 181px;
     justify-content: space-evenly;
     max-width: none;
     max-height: 545px;
-    margin-left: 39px;
-    margin-right: 40px;
+    margin: calc(55px + 144px) 40px 95px 39px;
   }
   @include breakpoint($lg) {
     justify-content:space-between;

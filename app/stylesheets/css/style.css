@@ -249,6 +249,7 @@ button {
 @media (min-width: 60rem) {
   .showcase__content {
     width: 43.0625rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 75rem) {
@@ -442,8 +443,7 @@ button {
     justify-content: space-evenly;
     max-width: none;
     max-height: 545px;
-    margin-left: 39px;
-    margin-right: 40px;
+    margin: 199px 40px 95px 39px;
   }
 }
 @media (min-width: 75rem) {

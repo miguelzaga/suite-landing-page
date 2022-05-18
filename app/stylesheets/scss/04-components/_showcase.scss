@@ -28,6 +28,7 @@
     }
     @include breakpoint($md-lg) {
       width: rem(689px);
+      margin-bottom: 0;
     }
     @include breakpoint($lg){
       width: rem(824px);
