@@ -21,6 +21,7 @@
   &__content {
     max-width: 375px;
     margin: 0 auto rem(56px);
+    color: $black;
     @include breakpoint($md) {
       max-width: none;
       margin: 0 0 rem(88px);

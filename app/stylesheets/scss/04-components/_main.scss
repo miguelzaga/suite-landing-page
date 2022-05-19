@@ -1,5 +1,16 @@
 @use "./../01-abstracts/" as *;
 
 .main {
-  margin: rem(56px) 0;
+  margin: rem(56px) 0 0;
+  position: relative;
+  margin-top: -134px;
+  top: 134px;
+  @include breakpoint($md){
+    margin-top: -464px;
+    top: 464px;    
+  }
+  @include breakpoint($md-lg){
+    margin-top: -265px;
+    top: 265px;    
+  }
 }

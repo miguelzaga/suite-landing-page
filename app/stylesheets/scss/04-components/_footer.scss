@@ -1,31 +1,53 @@
 @use "./../01-abstracts/" as *;
 
+$offset: calc(420px - 286px);
+
 .footer {
-  width: rem(125px);
-  margin: rem(56px) auto rem(80px);
-  @include breakpoint($md) {
-    margin: rem(72px) rem(40px) rem(72px) rem(39px);
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: $cream;
+  height: 420px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  @include breakpoint($md){
+    height: 640px;
   }
-  @include breakpoint($lg) {
-    max-width: $max-lg;
-    margin: rem(95px) auto rem(72px);
+  @include breakpoint($md-lg){
+    height: 464px;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 33px;
+    width: rem(125px);
+    padding-top: rem(190px);
+    @include breakpoint($md) {
+      width: 100%;
+      padding-top: rem(536px);
+      margin: 0 rem(40px) 72px rem(39px);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include breakpoint($md-lg){
+      padding-top: 360px;
+    }
+    @include breakpoint($lg) {
+      max-width: $max-lg;
+      margin: 0 auto rem(72px);
+    }
   }
 
   &__logo {
     width: rem(81px);
     height: rem(32px);
-    margin: rem(33px) auto;
     @include breakpoint($md) {
       margin: 0;
     }
   }
 
   &__copyright {
-    margin: rem(33px) auto;
     color: $grey;
     line-height: rem(32px);
     letter-spacing: rem(0.08px);
@@ -35,7 +57,7 @@
   }
 
   &__socials {
-    margin: rem(33px) auto;
+    width: 116px;
     display: flex;
     justify-content: space-between;
     @include breakpoint($md) {
