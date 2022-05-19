@@ -3,6 +3,7 @@
 .main {
   margin: rem(56px) 0 0;
   position: relative;
+  z-index: 2;
   margin-top: -134px;
   top: 134px;
   @include breakpoint($md){

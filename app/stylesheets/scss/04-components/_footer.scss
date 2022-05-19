@@ -6,7 +6,7 @@ $offset: calc(420px - 286px);
   background-color: $cream;
   height: 420px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: flex;
   justify-content: center;
   @include breakpoint($md){

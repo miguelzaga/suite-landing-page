@@ -291,6 +291,7 @@ button {
 .main {
   margin: 3.5rem 0 0;
   position: relative;
+  z-index: 2;
   margin-top: -134px;
   top: 134px;
 }
@@ -693,7 +694,7 @@ button {
   background-color: #f3ede7;
   height: 420px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: flex;
   justify-content: center;
 }
