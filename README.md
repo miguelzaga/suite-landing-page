@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/suite-landing-page-with-sass-and-flexbox-a9EhgrMehG)
 - Live Site URL: [miguelzaga.github.io/suite-landing-page](https://miguelzaga.github.io/suite-landing-page/)
 
 ## My process
